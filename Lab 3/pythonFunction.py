@@ -63,10 +63,9 @@ def has_33(nums):
     if nums[i] == 3 and nums[i+1] == 3:
        return True
   return False
-
-has_33([1, 3, 3]) #→ True
-has_33([1, 3, 1, 3]) #→ False
-has_33([3, 1, 3]) #→ False
+print(has_33([1, 3, 3])) #→ True
+print(has_33([1, 3, 1, 3])) #→ False
+print(has_33([3, 1, 3])) #→ False
 #8
 def spy_game(nums):
   count = 0
