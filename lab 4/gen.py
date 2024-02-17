@@ -18,6 +18,16 @@ for num in delim(n):
     print(num)
 
 #4
+a,b = map(int,input().split())
+squares = (i**2 for i in range(a,b + 1))
+for i in squares:
+    print(i)
+
+#5
+n = int(input())
+c = (i for i in range(n,-1,-1))
+print(*c)
+
     
 
 
