@@ -1,8 +1,11 @@
 #1
-n = int(input())
-a = (k**2 for k in range(n))
-
-print(list(a))
+def squares_gen(N):
+    for i in range(1, N+1):
+        yield i**2
+N = 20
+a = squares_gen(N)
+for i in a:
+    print(i)
 #2
 n = int(input())
 c = (i for i in range (n))
