@@ -2,7 +2,7 @@ import re
 txt = open('row.txt')
 #1
 def a_or_ab(txt):
-    patt = "^a(*b)$"
+    patt = "^a.*b$"
     res = re.findall(patt, txt)
     return res
 #2
